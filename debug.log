@@ -8730,3 +8730,915 @@ File /Users/tanishqv/DjangoProjects/djangogirls/blog/templates/blog/post_list.ht
 "GET / HTTP/1.1" 200 981
 "GET / HTTP/1.1" 200 981
 "GET / HTTP/1.1" 200 981
+(0.001) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" LIMIT 21; args=()
+(0.002) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" LIMIT 21; args=()
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" LIMIT 21; args=()
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'tanishqv' LIMIT 21; args=('tanishqv',)
+(0.003) INSERT INTO "blog_post" ("author_id", "title", "text", "created_date", "published_date") VALUES (1, 'Sample Title', 'Test', '2022-07-12 13:10:17.849975', NULL); args=[1, 'Sample Title', 'Test', '2022-07-12 13:10:17.849975', None]
+(0.000) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" LIMIT 21; args=()
+(0.000) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."author_id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."title" LIKE '%Sample%' ESCAPE '\' LIMIT 21; args=('%Sample%',)
+(0.000) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."published_date" <= '2022-07-12 13:26:15.864559' LIMIT 21; args=('2022-07-12 13:26:15.864559',)
+(0.000) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."title" LIKE '%Sample%' ESCAPE '\' LIMIT 21; args=('%Sample%',)
+(0.002) UPDATE "blog_post" SET "author_id" = 1, "title" = 'Sample Title', "text" = 'Test', "created_date" = '2022-07-12 13:10:17.849975', "published_date" = '2022-07-12 13:29:06.190192' WHERE "blog_post"."id" = 1; args=(1, 'Sample Title', 'Test', '2022-07-12 13:10:17.849975', '2022-07-12 13:29:06.190192', 1)
+(0.000) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."published_date" <= '2022-07-12 13:29:24.754223' LIMIT 21; args=('2022-07-12 13:29:24.754223',)
+(0.000) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" ORDER BY "blog_post"."created_date" ASC LIMIT 21; args=()
+(0.000) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" ORDER BY "blog_post"."created_date" DESC LIMIT 21; args=()
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir /Users/tanishqv/DjangoProjects/djangogirls/blog/templates with glob **/*.
+Watching dir /Users/tanishqv/DjangoProjects/djangogirls/locale with glob **/*.mo.
+Watching dir /Users/tanishqv/DjangoProjects/djangogirls/blog/locale with glob **/*.mo.
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/html/parser.py first seen with mtime 1654533577.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/socketserver.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/server.py first seen with mtime 1654533577.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/asyncio/format_helpers.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/uuid.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/staticfiles/management/commands/__init__.py first seen with mtime 1657545274.752767
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/models/fields/files.py first seen with mtime 1657545274.7851825
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/encodings/__init__.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/models/options.py first seen with mtime 1657545274.7838223
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/token.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/contextlib.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/asyncio/__init__.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sqlparse/engine/grouping.py first seen with mtime 1657545273.987469
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/asyncio/queues.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sqlparse/formatter.py first seen with mtime 1657545273.9857428
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/contextvars.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/backends/sqlite3/features.py first seen with mtime 1657545274.7776062
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload/_statistics.cpython-310-darwin.so first seen with mtime 1654533865.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/models/fields/related_descriptors.py first seen with mtime 1657545274.7863047
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/middleware/security.py first seen with mtime 1657545274.8018692
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/middleware/csrf.py first seen with mtime 1657545274.801342
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/numberformat.py first seen with mtime 1657545274.814689
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/parse.py first seen with mtime 1654533577.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/sqlite3/__init__.py first seen with mtime 1654533577.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/tokenize.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/forms/formsets.py first seen with mtime 1657545274.7906713
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/admin/models.py first seen with mtime 1657545274.2254972
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/backends/__init__.py first seen with mtime 1657545274.8045323
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/admin/__init__.py first seen with mtime 1657545274.2240884
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/fractions.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/numbers.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload/_sqlite3.cpython-310-darwin.so first seen with mtime 1654533864.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/_weakrefset.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload/math.cpython-310-darwin.so first seen with mtime 1654533867.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/string.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/pytz/exceptions.py first seen with mtime 1635316814.317189
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/log.py first seen with mtime 1657545274.8142428
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/logging/config.py first seen with mtime 1654533577.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/serializers/__init__.py first seen with mtime 1657545274.7678266
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/utils.py first seen with mtime 1657545274.7695537
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/migrations/operations/utils.py first seen with mtime 1657545274.7815466
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/email/policy.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/backends/base/__init__.py first seen with mtime 1657545274.7703013
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sqlparse/filters/output.py first seen with mtime 1657545273.9885898
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/warnings.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/dateformat.py first seen with mtime 1657545274.8113866
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/asgiref/local.py first seen with mtime 1657545274.057495
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/_base.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/asyncio/subprocess.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/collections/__init__.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/management/__init__.py first seen with mtime 1657545274.7626994
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/models/query_utils.py first seen with mtime 1657545274.7843704
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/forms/__init__.py first seen with mtime 1657545274.7899003
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/hashable.py first seen with mtime 1657545274.813078
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/heapq.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/checks/templates.py first seen with mtime 1657545274.7576027
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/email/mime/text.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/ast.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/cache/backends/locmem.py first seen with mtime 1657545274.756188
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/__init__.py first seen with mtime 1657545274.8097348
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sqlparse/utils.py first seen with mtime 1657545273.986887
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload/_hashlib.cpython-310-darwin.so first seen with mtime 1654533862.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/contenttypes/admin.py first seen with mtime 1657545274.4229805
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/migrations/utils.py first seen with mtime 1657545274.7804523
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/views/generic/edit.py first seen with mtime 1657545274.820231
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/baseconv.py first seen with mtime 1657545274.8106062
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/timezone.py first seen with mtime 1657545274.8155982
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload/unicodedata.cpython-310-darwin.so first seen with mtime 1654533868.0
+File /Users/tanishqv/DjangoProjects/djangogirls/mysite/settings.py first seen with mtime 1657551491.9010053
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/models/fields/related_lookups.py first seen with mtime 1657545274.7864542
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/argparse.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/files/uploadhandler.py first seen with mtime 1657545274.7600543
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/auth/models.py first seen with mtime 1657545274.3787854
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload/_asyncio.cpython-310-darwin.so first seen with mtime 1654533859.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/text.py first seen with mtime 1657545274.8153236
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/__init__.py first seen with mtime 1654533577.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/auth/__init__.py first seen with mtime 1657545274.37662
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/asgiref/current_thread_executor.py first seen with mtime 1657545274.0572894
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/models/constants.py first seen with mtime 1657545274.782377
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/response.py first seen with mtime 1657545274.8040404
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload/_opcode.cpython-310-darwin.so first seen with mtime 1654533863.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/__init__.py first seen with mtime 1657545274.2238848
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/admin/filters.py first seen with mtime 1657545274.2250586
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/models/manager.py first seen with mtime 1657545274.7836072
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/deprecation.py first seen with mtime 1657545274.812188
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/wsgiref/headers.py first seen with mtime 1654533577.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/templatetags/static.py first seen with mtime 1657545274.806721
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/models/fields/__init__.py first seen with mtime 1657545274.7849994
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/migrations/state.py first seen with mtime 1657545274.780328
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/__init__.py first seen with mtime 1657545274.8020427
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/views/generic/detail.py first seen with mtime 1657545274.8200877
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/auth/tokens.py first seen with mtime 1657545274.3792095
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/models/sql/where.py first seen with mtime 1657545274.7891285
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/templatetags/__init__.py first seen with mtime 1657545274.8061604
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/connection.py first seen with mtime 1657545274.8109238
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/asyncio/threads.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/checks/__init__.py first seen with mtime 1657545274.756501
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/urls/__init__.py first seen with mtime 1657545274.8086698
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/forms/fields.py first seen with mtime 1657545274.7903118
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/calendar.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/sessions/apps.py first seen with mtime 1657545274.6693084
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/glob.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/staticfiles/finders.py first seen with mtime 1657545274.751585
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/models/enums.py first seen with mtime 1657545274.782872
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/auth/base_user.py first seen with mtime 1657545274.3771858
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/servers/__init__.py first seen with mtime 1657545274.7688172
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/backends/base.py first seen with mtime 1657545274.8046997
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload/_random.cpython-310-darwin.so first seen with mtime 1654533863.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/management/color.py first seen with mtime 1657545274.7630894
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/suite.py first seen with mtime 1654533577.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/staticfiles/management/__init__.py first seen with mtime 1657545274.7526062
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/views/decorators/__init__.py first seen with mtime 1657545274.8181038
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/asyncio/runners.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/serializers/base.py first seen with mtime 1657545274.7679746
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/models/sql/datastructures.py first seen with mtime 1657545274.7883759
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/middleware/cache.py first seen with mtime 1657545274.8008244
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/encoder.py first seen with mtime 1654533577.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/__init__.py first seen with mtime 1657545274.1171632
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/backends/base/base.py first seen with mtime 1657545274.7704997
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload/_ssl.cpython-310-darwin.so first seen with mtime 1654533864.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/views/decorators/csrf.py first seen with mtime 1657545274.8187125
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/shutil.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sqlparse/filters/__init__.py first seen with mtime 1657545273.9878712
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/models/functions/__init__.py first seen with mtime 1657545274.786792
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/management/base.py first seen with mtime 1657545274.762881
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/sites/__init__.py first seen with mtime 1657545274.7113342
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/auth/validators.py first seen with mtime 1657545274.3794756
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/email/generator.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/context.py first seen with mtime 1657545274.8025627
+File /Users/tanishqv/DjangoProjects/djangogirls/mysite/__init__.py first seen with mtime 1657549025.6482308
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/backends/base/validation.py first seen with mtime 1657545274.7717617
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/asyncio/selector_events.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/admin/utils.py first seen with mtime 1657545274.2265859
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/models/__init__.py first seen with mtime 1657545274.7817204
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/http.py first seen with mtime 1657545274.8135138
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/duration.py first seen with mtime 1657545274.8123128
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/email/quoprimime.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/pkgutil.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/socket.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/asyncio/mixins.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sqlparse/sql.py first seen with mtime 1657545273.986502
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/files/uploadedfile.py first seen with mtime 1657545274.7598042
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sqlparse/engine/__init__.py first seen with mtime 1657545273.9871256
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/staticfiles/utils.py first seen with mtime 1657545274.7523117
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/apps/__init__.py first seen with mtime 1657545274.1182141
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/pytz/tzfile.py first seen with mtime 1635316814.3179502
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/loaders/app_directories.py first seen with mtime 1657545274.8055227
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sqlparse/engine/statement_splitter.py first seen with mtime 1657545273.9876366
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/cache.py first seen with mtime 1657545274.8107848
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/auth/password_validation.py first seen with mtime 1657545274.378947
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/operator.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/__init__.py first seen with mtime 1654533577.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/conf/urls/__init__.py first seen with mtime 1657545274.2234106
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/urls/base.py first seen with mtime 1657545274.8088164
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/contenttypes/views.py first seen with mtime 1657545274.423903
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/runner.py first seen with mtime 1654533577.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/checks/model_checks.py first seen with mtime 1657545274.7573178
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/selectors.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/locale.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload/_json.cpython-310-darwin.so first seen with mtime 1654533862.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/types.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/platform.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/__init__.py first seen with mtime 1657545274.7538524
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sqlparse/exceptions.py first seen with mtime 1657545273.98553
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/email/contentmanager.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/pytz/lazy.py first seen with mtime 1635316814.3173435
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/forms/boundfield.py first seen with mtime 1657545274.7900639
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/struct.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/library.py first seen with mtime 1657545274.803553
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/migrations/exceptions.py first seen with mtime 1657545274.7787383
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/asyncio/trsock.py first seen with mtime 1654533576.0
+File /Users/tanishqv/DjangoProjects/djangogirls/blog/views.py first seen with mtime 1657689296.672669
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload/_socket.cpython-310-darwin.so first seen with mtime 1654533864.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload/_uuid.cpython-310-darwin.so first seen with mtime 1654533866.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/files/__init__.py first seen with mtime 1657545274.7587717
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/views/static.py first seen with mtime 1657545274.8179684
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/signal.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/auth/signals.py first seen with mtime 1657545274.3790753
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/loader_tags.py first seen with mtime 1657545274.803839
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/typing.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/asyncio/coroutines.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/views/__init__.py first seen with mtime 1657545274.817203
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/views/debug.py first seen with mtime 1657545274.8175235
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/fnmatch.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/tree.py first seen with mtime 1657545274.8158598
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/__init__.py first seen with mtime 1657545274.760377
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/admin/helpers.py first seen with mtime 1657545274.2253618
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/asgi.py first seen with mtime 1657545274.7605572
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/utils.py first seen with mtime 1657545274.8043993
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/weakref.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/auth/backends.py first seen with mtime 1657545274.377044
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/migrations/operations/special.py first seen with mtime 1657545274.7814107
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/asyncio/base_futures.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/messages/apps.py first seen with mtime 1657545274.597631
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/models/sql/subqueries.py first seen with mtime 1657545274.7889743
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sqlparse/filters/reindent.py first seen with mtime 1657545273.9889493
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/stat.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/asgiref/__init__.py first seen with mtime 1657545274.056862
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/email/_policybase.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/files/move.py first seen with mtime 1657545274.7593646
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/staticfiles/views.py first seen with mtime 1657545274.7524488
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/email/iterators.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/checks/messages.py first seen with mtime 1657545274.757119
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/copy.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload/_struct.cpython-310-darwin.so first seen with mtime 1654533865.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/contenttypes/forms.py first seen with mtime 1657545274.423599
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/urls/conf.py first seen with mtime 1657545274.808963
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/servers/basehttp.py first seen with mtime 1657545274.7689726
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/scanner.py first seen with mtime 1654533577.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/asyncio/unix_events.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/asyncio/protocols.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/views/decorators/cache.py first seen with mtime 1657545274.818298
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/admin/templatetags/log.py first seen with mtime 1657545274.333716
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/module_loading.py first seen with mtime 1657545274.8145397
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/models/base.py first seen with mtime 1657545274.7821913
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/checks/registry.py first seen with mtime 1657545274.7574756
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/mail/__init__.py first seen with mtime 1657545274.761218
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/checks/database.py first seen with mtime 1657545274.7569015
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/models/deletion.py first seen with mtime 1657545274.7827284
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/_collections_abc.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/opcode.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/models/fields/mixins.py first seen with mtime 1657545274.7854729
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/functional.py first seen with mtime 1657545274.812952
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/conf/__init__.py first seen with mtime 1657545274.1196053
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/_markupbase.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/forms/models.py first seen with mtime 1657545274.7909322
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/wsgiref/__init__.py first seen with mtime 1654533577.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/asyncio.py first seen with mtime 1657545274.8102322
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/email/header.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/request.py first seen with mtime 1654533577.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/mimetypes.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/loaders/__init__.py first seen with mtime 1657545274.8053882
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/case.py first seen with mtime 1654533577.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/functools.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/backends/base/client.py first seen with mtime 1657545274.7706277
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/migrations/migration.py first seen with mtime 1657545274.7795053
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/lorem_ipsum.py first seen with mtime 1657545274.8143804
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload/_contextvars.cpython-310-darwin.so first seen with mtime 1654533861.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/datetime.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/contenttypes/apps.py first seen with mtime 1657545274.4231071
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/admin/templatetags/__init__.py first seen with mtime 1657545274.332955
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/asyncio/tasks.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/validators.py first seen with mtime 1657545274.754872
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/views/defaults.py first seen with mtime 1657545274.817665
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/sessions/models.py first seen with mtime 1657545274.6698394
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/admin/actions.py first seen with mtime 1657545274.2242415
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/email/mime/nonmultipart.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/sessions/__init__.py first seen with mtime 1657545274.6691732
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/asyncio/exceptions.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/email/_encoded_words.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/wsgiref/handlers.py first seen with mtime 1654533577.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/re.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/timesince.py first seen with mtime 1657545274.8154612
+File /Users/tanishqv/DjangoProjects/djangogirls/blog/apps.py first seen with mtime 1657550866.9764078
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/logging/__init__.py first seen with mtime 1654533577.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/models/utils.py first seen with mtime 1657545274.7846332
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload/_datetime.cpython-310-darwin.so first seen with mtime 1654533861.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/admin/views/main.py first seen with mtime 1657545274.3344042
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/admin/templatetags/admin_list.py first seen with mtime 1657545274.3331451
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/models/signals.py first seen with mtime 1657545274.7845035
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload/fcntl.cpython-310-darwin.so first seen with mtime 1654533866.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/mail/message.py first seen with mtime 1657545274.7613885
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/files/temp.py first seen with mtime 1657545274.759668
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/models/functions/mixins.py first seen with mtime 1657545274.7873454
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/conf/locale/__init__.py first seen with mtime 1657545274.121827
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/files/base.py first seen with mtime 1657545274.7589297
+File /Users/tanishqv/DjangoProjects/djangogirls/blog/urls.py first seen with mtime 1657618956.6207612
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/collections/abc.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/models/functions/comparison.py first seen with mtime 1657545274.786934
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/views/generic/__init__.py first seen with mtime 1657545274.8195739
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/admin/exceptions.py first seen with mtime 1657545274.2248874
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/models/expressions.py first seen with mtime 1657545274.7831123
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/transaction.py first seen with mtime 1657545274.769336
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/_compat_pickle.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/admin/sites.py first seen with mtime 1657545274.2262347
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/ipaddress.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/hashlib.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/queue.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/backends/sqlite3/client.py first seen with mtime 1657545274.7772927
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/backends/__init__.py first seen with mtime 1657545274.7697122
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/staticfiles/apps.py first seen with mtime 1657545274.7512944
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/base.py first seen with mtime 1657545274.760728
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/http/__init__.py first seen with mtime 1657545274.7997556
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/checks/caches.py first seen with mtime 1657545274.7567704
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/models/fields/proxy.py first seen with mtime 1657545274.785596
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/auth/middleware.py first seen with mtime 1657545274.3784754
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/cgi.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/logging/handlers.py first seen with mtime 1654533577.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/asyncio/base_subprocess.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/admin/templatetags/admin_urls.py first seen with mtime 1657545274.333438
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/defaultfilters.py first seen with mtime 1657545274.8028865
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/dates.py first seen with mtime 1657545274.8116596
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sqlparse/filters/aligned_indent.py first seen with mtime 1657545273.988141
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/reprlib.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/messages/api.py first seen with mtime 1657545274.5974987
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/datastructures.py first seen with mtime 1657545274.811225
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/apps/registry.py first seen with mtime 1657545274.118849
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/admin/widgets.py first seen with mtime 1657545274.2267654
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/email/_header_value_parser.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/backends/base/schema.py first seen with mtime 1657545274.7715995
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sqlparse/lexer.py first seen with mtime 1657545273.9862232
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/cache/backends/base.py first seen with mtime 1657545274.7556274
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/messages/constants.py first seen with mtime 1657545274.5977895
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/ipv6.py first seen with mtime 1657545274.8138344
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/linecache.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/dateparse.py first seen with mtime 1657545274.8115308
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/decimal.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py first seen with mtime 1657545274.7608728
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/pytz/tzinfo.py first seen with mtime 1635316814.3182843
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/html/entities.py first seen with mtime 1654533577.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/forms/renderers.py first seen with mtime 1657545274.7910607
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/signals.py first seen with mtime 1657545274.7545457
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/abc.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/defaulttags.py first seen with mtime 1657545274.8031414
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/decoder.py first seen with mtime 1654533577.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/wsgiref/util.py first seen with mtime 1654533577.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/files/utils.py first seen with mtime 1657545274.7602243
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/secrets.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lzma.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/main.py first seen with mtime 1654533577.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/auth/admin.py first seen with mtime 1657545274.3767774
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/models/fields/reverse_related.py first seen with mtime 1657545274.7866101
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/admin/templatetags/admin_modify.py first seen with mtime 1657545274.3332987
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/email/errors.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/migrations/operations/__init__.py first seen with mtime 1657545274.7807832
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/email/mime/multipart.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/loaders/base.py first seen with mtime 1657545274.8056448
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload/_sha512.cpython-310-darwin.so first seen with mtime 1654533864.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/wsgi.py first seen with mtime 1657545274.7549996
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/admin/templatetags/base.py first seen with mtime 1657545274.3335762
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/checks/security/sessions.py first seen with mtime 1657545274.7585855
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/models/functions/text.py first seen with mtime 1657545274.7874863
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/datetime_safe.py first seen with mtime 1657545274.8117962
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/email/feedparser.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/backends/ddl_references.py first seen with mtime 1657545274.7698736
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/apps/config.py first seen with mtime 1657545274.1185877
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/backends/sqlite3/schema.py first seen with mtime 1657545274.7781394
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/engine.py first seen with mtime 1657545274.8032799
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/backends/base/creation.py first seen with mtime 1657545274.770789
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/exceptions.py first seen with mtime 1657545274.8034067
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/templatetags/i18n.py first seen with mtime 1657545274.806464
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/migrations/__init__.py first seen with mtime 1657545274.7783349
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/wsgi.py first seen with mtime 1657545274.7610254
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/templatetags/tz.py first seen with mtime 1657545274.8069232
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/inspect.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/backends/base/introspection.py first seen with mtime 1657545274.77113
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/mail/utils.py first seen with mtime 1657545274.7615218
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/loader.py first seen with mtime 1654533577.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/asyncio/base_tasks.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload/_pickle.cpython-310-darwin.so first seen with mtime 1654533863.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/difflib.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/response.py first seen with mtime 1654533577.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/copyreg.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sqlparse/tokens.py first seen with mtime 1657545273.986714
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/http/request.py first seen with mtime 1657545274.800322
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/views/generic/base.py first seen with mtime 1657545274.8197443
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/pprint.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/forms/utils.py first seen with mtime 1657545274.7912083
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/models/aggregates.py first seen with mtime 1657545274.7818534
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/uu.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload/select.cpython-310-darwin.so first seen with mtime 1654533867.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/encoding.py first seen with mtime 1657545274.8124557
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/checks/security/__init__.py first seen with mtime 1657545274.7581449
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/migrations/operations/fields.py first seen with mtime 1657545274.78108
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sqlparse/filters/right_margin.py first seen with mtime 1657545273.989456
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/ssl.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload/_blake2.cpython-310-darwin.so first seen with mtime 1654533859.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/email/__init__.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/io.py first seen with mtime 1654533576.0
+File /Users/tanishqv/DjangoProjects/djangogirls/manage.py first seen with mtime 1657549487.3280804
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sqlparse/filters/others.py first seen with mtime 1657545273.9883308
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sqlparse/keywords.py first seen with mtime 1657545273.9860039
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/conf/global_settings.py first seen with mtime 1657545274.1199164
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/messages/__init__.py first seen with mtime 1657545274.5973654
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/pytz/__init__.py first seen with mtime 1635316814.3170013
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/shortcuts.py first seen with mtime 1657545274.1177332
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/sre_constants.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/_sitebuiltins.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/contenttypes/management/__init__.py first seen with mtime 1657545274.4603813
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/backends/sqlite3/creation.py first seen with mtime 1657545274.7774415
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/asyncio/base_events.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/formats.py first seen with mtime 1657545274.8127725
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/checks/async_checks.py first seen with mtime 1657545274.7566314
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/asyncio/events.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/asyncio/locks.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/loaders/filesystem.py first seen with mtime 1657545274.8059087
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/traceback.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/backends/sqlite3/introspection.py first seen with mtime 1657545274.7778015
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/paginator.py first seen with mtime 1657545274.7544186
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/html.py first seen with mtime 1657545274.8133066
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/sites/shortcuts.py first seen with mtime 1657545274.7127593
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/importlib/__init__.py first seen with mtime 1654533577.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/genericpath.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload/_queue.cpython-310-darwin.so first seen with mtime 1654533863.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/templatetags/cache.py first seen with mtime 1657545274.806303
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/loader.py first seen with mtime 1657545274.8036823
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/__init__.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/models/fields/related.py first seen with mtime 1657545274.7860324
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/http/cookie.py first seen with mtime 1657545274.799899
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/models/sql/query.py first seen with mtime 1657545274.7888105
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/views/csrf.py first seen with mtime 1657545274.8173432
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/admin/views/__init__.py first seen with mtime 1657545274.3338604
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/version.py first seen with mtime 1657545274.8159933
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/urls/utils.py first seen with mtime 1657545274.8095968
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/_compression.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/sessions/base_session.py first seen with mtime 1657545274.6694374
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/migrations/operations/base.py first seen with mtime 1657545274.7809255
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/models/sql/constants.py first seen with mtime 1657545274.788236
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/statistics.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/smartif.py first seen with mtime 1657545274.8042216
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/backends/utils.py first seen with mtime 1657545274.7701666
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/contenttypes/models.py first seen with mtime 1657545274.4237492
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/contenttypes/__init__.py first seen with mtime 1657545274.4228199
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/cache/backends/__init__.py first seen with mtime 1657545274.7554522
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/asyncio/streams.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/backends/signals.py first seen with mtime 1657545274.7700074
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/models/functions/math.py first seen with mtime 1657545274.7872171
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload/binascii.cpython-310-darwin.so first seen with mtime 1654533866.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/middleware/__init__.py first seen with mtime 1657545274.8006558
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/dispatch/dispatcher.py first seen with mtime 1657545274.789577
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/_os.py first seen with mtime 1657545274.809888
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/email/message.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload/_posixsubprocess.cpython-310-darwin.so first seen with mtime 1654533863.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/email/encoders.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/os.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/management/commands/runserver.py first seen with mtime 1657545274.765951
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/gettext.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/codecs.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/cache/__init__.py first seen with mtime 1657545274.7551746
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/__init__.py first seen with mtime 1654533577.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/models/lookups.py first seen with mtime 1657545274.783464
+File /Users/tanishqv/DjangoProjects/djangogirls/blog/models.py first seen with mtime 1657551611.901575
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload/_bisect.cpython-310-darwin.so first seen with mtime 1654533859.0
+File /Users/tanishqv/DjangoProjects/djangogirls/blog/__init__.py first seen with mtime 1657550866.9677756
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/email/base64mime.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/keyword.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/cache/backends/filebased.py first seen with mtime 1657545274.7560515
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/templatetags/l10n.py first seen with mtime 1657545274.8065867
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/ntpath.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/autoreload.py first seen with mtime 1657545274.8104544
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/checks/translation.py first seen with mtime 1657545274.757734
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/exceptions.py first seen with mtime 1657545274.7541792
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/email/mime/__init__.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/urls/resolvers.py first seen with mtime 1657545274.8094554
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload/_scproxy.cpython-310-darwin.so first seen with mtime 1654533864.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/encodings/aliases.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/checks/security/base.py first seen with mtime 1657545274.7583108
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/contenttypes/checks.py first seen with mtime 1657545274.4232297
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/staticfiles/__init__.py first seen with mtime 1657545274.7511423
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/signing.py first seen with mtime 1657545274.7546937
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/tempfile.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/__init__.py first seen with mtime 1654533577.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/contenttypes/fields.py first seen with mtime 1657545274.423443
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/auth/hashers.py first seen with mtime 1657545274.3783076
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/views/i18n.py first seen with mtime 1657545274.8178248
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/threading.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/email/parser.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/files/images.py first seen with mtime 1657545274.7590663
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/email/_parseaddr.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/importlib/_abc.py first seen with mtime 1654533577.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/models/functions/window.py first seen with mtime 1657545274.7876196
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/admin/apps.py first seen with mtime 1657545274.2243905
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/forms/forms.py first seen with mtime 1657545274.7904966
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/__init__.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload/array.cpython-310-darwin.so first seen with mtime 1654533866.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/wsgiref/simple_server.py first seen with mtime 1654533577.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/gzip.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/messages/storage/__init__.py first seen with mtime 1657545274.5985408
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload/_lzma.cpython-310-darwin.so first seen with mtime 1654533862.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/crypto.py first seen with mtime 1657545274.8110628
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/importlib/util.py first seen with mtime 1654533577.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py first seen with mtime 1654533577.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/http/response.py first seen with mtime 1657545274.8005106
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/autoreload.py first seen with mtime 1657545274.8021684
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/cookies.py first seen with mtime 1654533577.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/staticfiles/handlers.py first seen with mtime 1657545274.7517262
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/hmac.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/topological_sort.py first seen with mtime 1657545274.8157244
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/admin/checks.py first seen with mtime 1657545274.2246103
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/importlib/machinery.py first seen with mtime 1654533577.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/sessions/middleware.py first seen with mtime 1657545274.6696959
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/getpass.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sqlparse/cli.py first seen with mtime 1657545273.9851103
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/thread.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/models/constraints.py first seen with mtime 1657545274.7825444
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/models/functions/datetime.py first seen with mtime 1657545274.7870843
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/models/sql/__init__.py first seen with mtime 1657545274.787784
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/admin/options.py first seen with mtime 1657545274.225966
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/backends/base/operations.py first seen with mtime 1657545274.7713346
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/pickle.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/models/query.py first seen with mtime 1657545274.784178
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/auth/forms.py first seen with mtime 1657545274.3781238
+File /Users/tanishqv/DjangoProjects/djangogirls/blog/admin.py first seen with mtime 1657551945.7810876
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/backends/sqlite3/__init__.py first seen with mtime 1657545274.776928
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/staticfiles/management/commands/runserver.py first seen with mtime 1657545274.7532604
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/encodings/utf_8.py first seen with mtime 1654533577.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/email/mime/message.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/staticfiles/checks.py first seen with mtime 1657545274.751424
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/email/utils.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/enum.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/deconstruct.py first seen with mtime 1657545274.8119223
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/dispatch/__init__.py first seen with mtime 1657545274.7894056
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/pathlib.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/termcolors.py first seen with mtime 1657545274.8151548
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/itercompat.py first seen with mtime 1657545274.81396
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/files/storage.py first seen with mtime 1657545274.759533
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/inspect.py first seen with mtime 1657545274.8136923
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/html/__init__.py first seen with mtime 1654533577.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/urls/converters.py first seen with mtime 1657545274.8091009
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/posixpath.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/auth/apps.py first seen with mtime 1657545274.376904
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/migrations/operations/models.py first seen with mtime 1657545274.7812645
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/__init__.py first seen with mtime 1657545274.7691562
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/forms/widgets.py first seen with mtime 1657545274.7914443
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/models/indexes.py first seen with mtime 1657545274.7832916
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/views/generic/dates.py first seen with mtime 1657545274.8199313
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/random.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/backends/sqlite3/operations.py first seen with mtime 1657545274.7779655
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/regex_helper.py first seen with mtime 1657545274.8148546
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/views/decorators/debug.py first seen with mtime 1657545274.8188508
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/http/multipartparser.py first seen with mtime 1657545274.8001199
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/auth/checks.py first seen with mtime 1657545274.3773303
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/serializers/json.py first seen with mtime 1657545274.7681024
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/email/mime/base.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/views/generic/list.py first seen with mtime 1657545274.820381
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/sre_parse.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/util.py first seen with mtime 1654533577.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/auth/management/__init__.py first seen with mtime 1657545274.4200182
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/management/commands/__init__.py first seen with mtime 1657545274.7637944
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sqlparse/__init__.py first seen with mtime 1657545273.9846234
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/base64.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/asyncio/constants.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/quopri.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/urls/exceptions.py first seen with mtime 1657545274.8092484
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/subprocess.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/checks/urls.py first seen with mtime 1657545274.7578654
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload/_heapq.cpython-310-darwin.so first seen with mtime 1654533862.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/urllib/error.py first seen with mtime 1654533577.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/sre_compile.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/cache/utils.py first seen with mtime 1657545274.7553024
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/sqlite3/dbapi2.py first seen with mtime 1654533577.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sqlparse/filters/tokens.py first seen with mtime 1657545273.9896226
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/serializers/python.py first seen with mtime 1657545274.7683733
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/asyncio/transports.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sqlparse/engine/filter_stack.py first seen with mtime 1657545273.9872856
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload/zlib.cpython-310-darwin.so first seen with mtime 1654533868.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/admin/decorators.py first seen with mtime 1657545274.224761
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/bisect.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/asyncio/futures.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/backends/django.py first seen with mtime 1657545274.8048606
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/email/charset.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload/_bz2.cpython-310-darwin.so first seen with mtime 1654533860.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/translation/__init__.py first seen with mtime 1657545274.8164153
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/admin/views/autocomplete.py first seen with mtime 1657545274.334039
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/sessions/backends/__init__.py first seen with mtime 1657545274.67016
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/result.py first seen with mtime 1654533577.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/backends/base/features.py first seen with mtime 1657545274.7709565
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/asgiref/sync.py first seen with mtime 1657545274.058129
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/checks/security/csrf.py first seen with mtime 1657545274.758453
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py first seen with mtime 1657545274.7771306
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/translation/reloader.py first seen with mtime 1657545274.816555
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload/_decimal.cpython-310-darwin.so first seen with mtime 1654533862.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/safestring.py first seen with mtime 1657545274.815001
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/views/decorators/common.py first seen with mtime 1657545274.8185775
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/dis.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/translation/trans_real.py first seen with mtime 1657545274.8170285
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/files/locks.py first seen with mtime 1657545274.7592201
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload/termios.cpython-310-darwin.so first seen with mtime 1654533868.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/models/fields/json.py first seen with mtime 1657545274.7853448
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/base.py first seen with mtime 1657545274.8023927
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/unittest/signals.py first seen with mtime 1654533577.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/email/headerregistry.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/asyncio/sslproto.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/asyncio/log.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/dataclasses.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/utils/decorators.py first seen with mtime 1657545274.8120546
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/bz2.py first seen with mtime 1654533576.0
+File /Users/tanishqv/DjangoProjects/djangogirls/mysite/urls.py first seen with mtime 1657618751.5604248
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/asyncio/staggered.py first seen with mtime 1654533576.0
+File /Users/tanishqv/DjangoProjects/djangogirls/blog/templates/blog first seen with mtime 1657624891.504312
+File /Users/tanishqv/DjangoProjects/djangogirls/blog/templates/blog/post_list.html first seen with mtime 1657689713.2650864
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/auth/migrations/0012_alter_user_first_name_max_length.py first seen with mtime 1657545274.4220986
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/sessions/migrations/__init__.py first seen with mtime 1657545274.709756
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/auth/migrations/0005_alter_user_last_login_null.py first seen with mtime 1657545274.421206
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/models/sql/compiler.py first seen with mtime 1657545274.7880986
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/sessions/backends/db.py first seen with mtime 1657545274.6707711
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/auth/migrations/0011_update_proxy_permissions.py first seen with mtime 1657545274.421978
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/sessions/migrations/0001_initial.py first seen with mtime 1657545274.7096722
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/auth/migrations/__init__.py first seen with mtime 1657545274.4221745
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/auth/migrations/0007_alter_validators_add_error_messages.py first seen with mtime 1657545274.421464
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/admin/migrations/0003_logentry_add_action_flag_choices.py first seen with mtime 1657545274.3018322
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/stringprep.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/auth/migrations/0001_initial.py first seen with mtime 1657545274.420688
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/migrations/loader.py first seen with mtime 1657545274.7793474
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/auth/migrations/0003_alter_user_email_max_length.py first seen with mtime 1657545274.4209504
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/auth/migrations/0009_alter_user_last_name_max_length.py first seen with mtime 1657545274.4217198
+File /Users/tanishqv/DjangoProjects/djangogirls/mysite/wsgi.py first seen with mtime 1657549025.657927
+File /Users/tanishqv/DjangoProjects/djangogirls/blog/migrations/__init__.py first seen with mtime 1657550866.978465
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/middleware/clickjacking.py first seen with mtime 1657545274.8010108
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/migrations/executor.py first seen with mtime 1657545274.7789063
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/auth/migrations/0008_alter_user_username_max_length.py first seen with mtime 1657545274.421597
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/contenttypes/migrations/__init__.py first seen with mtime 1657545274.4610462
+File /Users/tanishqv/DjangoProjects/djangogirls/blog/migrations/0001_initial.py first seen with mtime 1657551796.023478
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/migrations/recorder.py first seen with mtime 1657545274.7799742
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/admin/migrations/__init__.py first seen with mtime 1657545274.3019104
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/contenttypes/migrations/0002_remove_content_type_name.py first seen with mtime 1657545274.4609604
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/sessions/backends/base.py first seen with mtime 1657545274.6703506
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/encodings/idna.py first seen with mtime 1654533576.0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/middleware/common.py first seen with mtime 1657545274.801172
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/auth/migrations/0002_alter_permission_name_max_length.py first seen with mtime 1657545274.4208179
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/auth/migrations/0006_require_contenttypes_0002.py first seen with mtime 1657545274.421332
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/contenttypes/migrations/0001_initial.py first seen with mtime 1657545274.4608297
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/auth/migrations/0004_alter_user_username_opts.py first seen with mtime 1657545274.421081
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/sessions/exceptions.py first seen with mtime 1657545274.669558
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/admin/migrations/0001_initial.py first seen with mtime 1657545274.3015728
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/admin/migrations/0002_logentry_remove_auto_add.py first seen with mtime 1657545274.3017032
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/auth/migrations/0010_alter_group_name_max_length.py first seen with mtime 1657545274.421847
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/messages/middleware.py first seen with mtime 1657545274.598068
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/db/migrations/graph.py first seen with mtime 1657545274.779154
+(0.001) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."published_date" <= '2022-07-13 05:22:39.955263' ORDER BY "blog_post"."published_date" ASC LIMIT 21; args=('2022-07-13 05:22:39.955263',)
+"GET / HTTP/1.1" 200 271
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/messages/storage/session.py first seen with mtime 1657545274.5991485
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/messages/utils.py first seen with mtime 1657545274.5982203
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/messages/storage/fallback.py first seen with mtime 1657545274.5990174
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/sessions/serializers.py first seen with mtime 1657545274.6699898
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/messages/context_processors.py first seen with mtime 1657545274.5979142
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/messages/storage/base.py first seen with mtime 1657545274.5986814
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/auth/context_processors.py first seen with mtime 1657545274.3777509
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/context_processors.py first seen with mtime 1657545274.8026993
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/messages/storage/cookie.py first seen with mtime 1657545274.5988548
+File /Users/tanishqv/DjangoProjects/djangogirls/blog/templates/blog/post_list.html previous mtime: 1657689713.2650864, current mtime: 1657690009.8240728
+/Users/tanishqv/DjangoProjects/djangogirls/blog/templates/blog/post_list.html notified as changed. Signal results: [(<function template_changed at 0x103f53400>, True), (<function translation_file_changed at 0x104984310>, None)].
+(0.001) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."published_date" <= '2022-07-13 05:26:54.360319' ORDER BY "blog_post"."published_date" ASC LIMIT 21; args=('2022-07-13 05:26:54.360319',)
+(0.000) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."published_date" <= '2022-07-13 05:26:54.360319' ORDER BY "blog_post"."published_date" ASC LIMIT 21; args=('2022-07-13 05:26:54.360319',)
+(0.000) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."published_date" <= '2022-07-13 05:26:54.360319' ORDER BY "blog_post"."published_date" ASC LIMIT 21; args=('2022-07-13 05:26:54.360319',)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-07-13 05:26:54.422470' AND "django_session"."session_key" = '4platpn3qb0w81ukp7flv3klsfvv3srf') LIMIT 21; args=('2022-07-13 05:26:54.422470', '4platpn3qb0w81ukp7flv3klsfvv3srf')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'endfor'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tanishqv/DjangoProjects/djangogirls/blog/views.py", line 7, in post_list
+    return render(request, 'blog/post_list.html', {'posts':posts})
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/template/base.py", line 531, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 12: 'endfor'. Did you forget to register or load this tag?
+"GET / HTTP/1.1" 500 117284
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/conf/locale/en/formats.py first seen with mtime 1657545274.1419566
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/conf/locale/en/__init__.py first seen with mtime 1657545274.1417794
+File /Users/tanishqv/DjangoProjects/djangogirls/blog/templates/blog/post_list.html previous mtime: 1657690009.8240728, current mtime: 1657690048.5838633
+/Users/tanishqv/DjangoProjects/djangogirls/blog/templates/blog/post_list.html notified as changed. Signal results: [(<function template_changed at 0x103f53400>, True), (<function translation_file_changed at 0x104984310>, None)].
+(0.001) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."published_date" <= '2022-07-13 05:27:41.415693' ORDER BY "blog_post"."published_date" ASC; args=('2022-07-13 05:27:41.415693',)
+"GET / HTTP/1.1" 200 251
+File /Users/tanishqv/DjangoProjects/djangogirls/blog/templates/blog/post_list.html previous mtime: 1657690048.5838633, current mtime: 1657690581.2913587
+/Users/tanishqv/DjangoProjects/djangogirls/blog/templates/blog/post_list.html notified as changed. Signal results: [(<function template_changed at 0x103f53400>, True), (<function translation_file_changed at 0x104984310>, None)].
+(0.001) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."published_date" <= '2022-07-13 05:36:25.453319' ORDER BY "blog_post"."published_date" ASC; args=('2022-07-13 05:36:25.453319',)
+"GET / HTTP/1.1" 200 417
+(0.001) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."published_date" <= '2022-07-13 05:37:52.526799' ORDER BY "blog_post"."published_date" ASC; args=('2022-07-13 05:37:52.526799',)
+"GET / HTTP/1.1" 200 417
+(0.001) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."published_date" <= '2022-07-13 05:37:54.742353' ORDER BY "blog_post"."published_date" ASC; args=('2022-07-13 05:37:54.742353',)
+"GET / HTTP/1.1" 200 417
+(0.000) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."published_date" <= '2022-07-13 05:37:56.442306' ORDER BY "blog_post"."published_date" ASC; args=('2022-07-13 05:37:56.442306',)
+"GET / HTTP/1.1" 200 417
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-07-13 05:40:27.029249' AND "django_session"."session_key" = '4platpn3qb0w81ukp7flv3klsfvv3srf') LIMIT 21; args=('2022-07-13 05:40:27.029249', '4platpn3qb0w81ukp7flv3klsfvv3srf')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+(0.001) SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "auth_user" ON ("django_admin_log"."user_id" = "auth_user"."id") LEFT OUTER JOIN "django_content_type" ON ("django_admin_log"."content_type_id" = "django_content_type"."id") WHERE "django_admin_log"."user_id" = 1 ORDER BY "django_admin_log"."action_time" DESC LIMIT 10; args=(1,)
+"GET /admin/ HTTP/1.1" 200 3953
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/staticfiles/storage.py first seen with mtime 1657545274.7519066
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-07-13 05:40:29.991072' AND "django_session"."session_key" = '4platpn3qb0w81ukp7flv3klsfvv3srf') LIMIT 21; args=('2022-07-13 05:40:29.991072', '4platpn3qb0w81ukp7flv3klsfvv3srf')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+(0.000) BEGIN; args=None
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'blog' AND "django_content_type"."model" = 'post') LIMIT 21; args=('blog', 'post')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" ORDER BY "auth_user"."username" ASC; args=()
+"GET /admin/blog/post/add/ HTTP/1.1" 200 8836
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/css/forms.css HTTP/1.1" 304 0
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-07-13 05:40:30.063026' AND "django_session"."session_key" = '4platpn3qb0w81ukp7flv3klsfvv3srf') LIMIT 21; args=('2022-07-13 05:40:30.063026', '4platpn3qb0w81ukp7flv3klsfvv3srf')
+"GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+"GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+"GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+"GET /static/admin/img/calendar-icons.svg HTTP/1.1" 200 1094
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-07-13 05:41:51.131733' AND "django_session"."session_key" = '4platpn3qb0w81ukp7flv3klsfvv3srf') LIMIT 21; args=('2022-07-13 05:41:51.131733', '4platpn3qb0w81ukp7flv3klsfvv3srf')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+(0.000) BEGIN; args=None
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT (1) AS "a" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 1; args=(1,)
+(0.002) INSERT INTO "blog_post" ("author_id", "title", "text", "created_date", "published_date") VALUES (1, 'My first post', 'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.', '2022-07-13 05:40:30', '2022-01-03 12:00:00'); args=[1, 'My first post', 'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.', '2022-07-13 05:40:30', '2022-01-03 12:00:00']
+(0.001) INSERT INTO "django_admin_log" ("action_time", "user_id", "content_type_id", "object_id", "object_repr", "action_flag", "change_message") VALUES ('2022-07-13 05:41:51.195434', 1, 7, '2', 'My first post', 1, '[{"added": {}}]'); args=['2022-07-13 05:41:51.195434', 1, 7, '2', 'My first post', 1, '[{"added": {}}]']
+"POST /admin/blog/post/add/ HTTP/1.1" 302 0
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-07-13 05:41:51.203094' AND "django_session"."session_key" = '4platpn3qb0w81ukp7flv3klsfvv3srf') LIMIT 21; args=('2022-07-13 05:41:51.203094', '4platpn3qb0w81ukp7flv3klsfvv3srf')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+(0.000) BEGIN; args=None
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" ORDER BY "auth_user"."username" ASC; args=()
+"GET /admin/blog/post/add/ HTTP/1.1" 200 9067
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-07-13 05:41:51.258582' AND "django_session"."session_key" = '4platpn3qb0w81ukp7flv3klsfvv3srf') LIMIT 21; args=('2022-07-13 05:41:51.258582', '4platpn3qb0w81ukp7flv3klsfvv3srf')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/_strptime.py first seen with mtime 1654533576.0
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-07-13 05:42:26.911683' AND "django_session"."session_key" = '4platpn3qb0w81ukp7flv3klsfvv3srf') LIMIT 21; args=('2022-07-13 05:42:26.911683', '4platpn3qb0w81ukp7flv3klsfvv3srf')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+(0.000) BEGIN; args=None
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT (1) AS "a" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 1; args=(1,)
+(0.001) INSERT INTO "blog_post" ("author_id", "title", "text", "created_date", "published_date") VALUES (1, 'My second post', 'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.', '2022-07-13 05:41:51', '2022-05-17 18:00:00'); args=[1, 'My second post', 'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.', '2022-07-13 05:41:51', '2022-05-17 18:00:00']
+(0.001) INSERT INTO "django_admin_log" ("action_time", "user_id", "content_type_id", "object_id", "object_repr", "action_flag", "change_message") VALUES ('2022-07-13 05:42:26.924097', 1, 7, '3', 'My second post', 1, '[{"added": {}}]'); args=['2022-07-13 05:42:26.924097', 1, 7, '3', 'My second post', 1, '[{"added": {}}]']
+"POST /admin/blog/post/add/ HTTP/1.1" 302 0
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-07-13 05:42:26.932415' AND "django_session"."session_key" = '4platpn3qb0w81ukp7flv3klsfvv3srf') LIMIT 21; args=('2022-07-13 05:42:26.932415', '4platpn3qb0w81ukp7flv3klsfvv3srf')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+(0.000) BEGIN; args=None
+(0.000) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."id" = 3 LIMIT 21; args=(3,)
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" ORDER BY "auth_user"."username" ASC; args=()
+"GET /admin/blog/post/3/change/ HTTP/1.1" 200 9586
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-07-13 05:42:27.006668' AND "django_session"."session_key" = '4platpn3qb0w81ukp7flv3klsfvv3srf') LIMIT 21; args=('2022-07-13 05:42:27.006668', '4platpn3qb0w81ukp7flv3klsfvv3srf')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-07-13 05:42:29.096068' AND "django_session"."session_key" = '4platpn3qb0w81ukp7flv3klsfvv3srf') LIMIT 21; args=('2022-07-13 05:42:29.096068', '4platpn3qb0w81ukp7flv3klsfvv3srf')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_post"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_post"; args=()
+(0.000) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" ORDER BY "blog_post"."id" DESC; args=()
+"GET /admin/blog/post/ HTTP/1.1" 200 6462
+"GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-07-13 05:42:29.192451' AND "django_session"."session_key" = '4platpn3qb0w81ukp7flv3klsfvv3srf') LIMIT 21; args=('2022-07-13 05:42:29.192451', '4platpn3qb0w81ukp7flv3klsfvv3srf')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-07-13 05:42:31.940830' AND "django_session"."session_key" = '4platpn3qb0w81ukp7flv3klsfvv3srf') LIMIT 21; args=('2022-07-13 05:42:31.940830', '4platpn3qb0w81ukp7flv3klsfvv3srf')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+(0.000) BEGIN; args=None
+(0.000) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" ORDER BY "auth_user"."username" ASC; args=()
+"GET /admin/blog/post/1/change/ HTTP/1.1" 200 9146
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-07-13 05:42:32.003944' AND "django_session"."session_key" = '4platpn3qb0w81ukp7flv3klsfvv3srf') LIMIT 21; args=('2022-07-13 05:42:32.003944', '4platpn3qb0w81ukp7flv3klsfvv3srf')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+File /Users/tanishqv/DjangoProjects/djangogirls/blog/templates/blog/post_list.html previous mtime: 1657690581.2913587, current mtime: 1657690994.884599
+/Users/tanishqv/DjangoProjects/djangogirls/blog/templates/blog/post_list.html notified as changed. Signal results: [(<function template_changed at 0x103f53400>, True), (<function translation_file_changed at 0x104984310>, None)].
+(0.000) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."published_date" <= '2022-07-13 05:43:21.352807' ORDER BY "blog_post"."published_date" ASC; args=('2022-07-13 05:43:21.352807',)
+"GET / HTTP/1.1" 200 1256
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-07-13 05:43:49.726078' AND "django_session"."session_key" = '4platpn3qb0w81ukp7flv3klsfvv3srf') LIMIT 21; args=('2022-07-13 05:43:49.726078', '4platpn3qb0w81ukp7flv3klsfvv3srf')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "auth_user" ON ("django_admin_log"."user_id" = "auth_user"."id") LEFT OUTER JOIN "django_content_type" ON ("django_admin_log"."content_type_id" = "django_content_type"."id") WHERE "django_admin_log"."user_id" = 1 ORDER BY "django_admin_log"."action_time" DESC LIMIT 10; args=(1,)
+"GET /admin/ HTTP/1.1" 200 4557
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-07-13 05:43:51.760362' AND "django_session"."session_key" = '4platpn3qb0w81ukp7flv3klsfvv3srf') LIMIT 21; args=('2022-07-13 05:43:51.760362', '4platpn3qb0w81ukp7flv3klsfvv3srf')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_post"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_post"; args=()
+(0.000) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" ORDER BY "blog_post"."id" DESC; args=()
+"GET /admin/blog/post/ HTTP/1.1" 200 6462
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-07-13 05:43:51.819786' AND "django_session"."session_key" = '4platpn3qb0w81ukp7flv3klsfvv3srf') LIMIT 21; args=('2022-07-13 05:43:51.819786', '4platpn3qb0w81ukp7flv3klsfvv3srf')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-07-13 05:43:53.178749' AND "django_session"."session_key" = '4platpn3qb0w81ukp7flv3klsfvv3srf') LIMIT 21; args=('2022-07-13 05:43:53.178749', '4platpn3qb0w81ukp7flv3klsfvv3srf')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+(0.000) BEGIN; args=None
+(0.000) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."id" = 3 LIMIT 21; args=(3,)
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" ORDER BY "auth_user"."username" ASC; args=()
+"GET /admin/blog/post/3/change/ HTTP/1.1" 200 9357
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-07-13 05:43:53.242177' AND "django_session"."session_key" = '4platpn3qb0w81ukp7flv3klsfvv3srf') LIMIT 21; args=('2022-07-13 05:43:53.242177', '4platpn3qb0w81ukp7flv3klsfvv3srf')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-07-13 05:44:07.707995' AND "django_session"."session_key" = '4platpn3qb0w81ukp7flv3klsfvv3srf') LIMIT 21; args=('2022-07-13 05:44:07.707995', '4platpn3qb0w81ukp7flv3klsfvv3srf')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+(0.000) BEGIN; args=None
+(0.000) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."id" = 3 LIMIT 21; args=(3,)
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT (1) AS "a" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 1; args=(1,)
+(0.001) UPDATE "blog_post" SET "author_id" = 1, "title" = 'My second post', "text" = 'Aenean eu leo quam. 
+Pellentesque ornare sem lacinia quam venenatis vestibulum. 
+Donec id elit non mi porta gravida at eget metus. 
+Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.', "created_date" = '2022-07-13 05:41:51', "published_date" = '2022-05-17 18:00:00' WHERE "blog_post"."id" = 3; args=(1, 'My second post', 'Aenean eu leo quam. \r\nPellentesque ornare sem lacinia quam venenatis vestibulum. \r\nDonec id elit non mi porta gravida at eget metus. \r\nFusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.', '2022-07-13 05:41:51', '2022-05-17 18:00:00', 3)
+(0.001) INSERT INTO "django_admin_log" ("action_time", "user_id", "content_type_id", "object_id", "object_repr", "action_flag", "change_message") VALUES ('2022-07-13 05:44:07.723603', 1, 7, '3', 'My second post', 2, '[{"changed": {"fields": ["Text"]}}]'); args=['2022-07-13 05:44:07.723603', 1, 7, '3', 'My second post', 2, '[{"changed": {"fields": ["Text"]}}]']
+"POST /admin/blog/post/3/change/ HTTP/1.1" 302 0
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-07-13 05:44:07.731712' AND "django_session"."session_key" = '4platpn3qb0w81ukp7flv3klsfvv3srf') LIMIT 21; args=('2022-07-13 05:44:07.731712', '4platpn3qb0w81ukp7flv3klsfvv3srf')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_post"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_post"; args=()
+(0.000) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" ORDER BY "blog_post"."id" DESC; args=()
+"GET /admin/blog/post/ HTTP/1.1" 200 6664
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-07-13 05:44:07.784714' AND "django_session"."session_key" = '4platpn3qb0w81ukp7flv3klsfvv3srf') LIMIT 21; args=('2022-07-13 05:44:07.784714', '4platpn3qb0w81ukp7flv3klsfvv3srf')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-07-13 05:44:09.328890' AND "django_session"."session_key" = '4platpn3qb0w81ukp7flv3klsfvv3srf') LIMIT 21; args=('2022-07-13 05:44:09.328890', '4platpn3qb0w81ukp7flv3klsfvv3srf')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+(0.000) BEGIN; args=None
+(0.000) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."id" = 2 LIMIT 21; args=(2,)
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" ORDER BY "auth_user"."username" ASC; args=()
+"GET /admin/blog/post/2/change/ HTTP/1.1" 200 9388
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-07-13 05:44:09.396943' AND "django_session"."session_key" = '4platpn3qb0w81ukp7flv3klsfvv3srf') LIMIT 21; args=('2022-07-13 05:44:09.396943', '4platpn3qb0w81ukp7flv3klsfvv3srf')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-07-13 05:44:21.891678' AND "django_session"."session_key" = '4platpn3qb0w81ukp7flv3klsfvv3srf') LIMIT 21; args=('2022-07-13 05:44:21.891678', '4platpn3qb0w81ukp7flv3klsfvv3srf')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+(0.000) BEGIN; args=None
+(0.000) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."id" = 2 LIMIT 21; args=(2,)
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT (1) AS "a" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 1; args=(1,)
+(0.001) UPDATE "blog_post" SET "author_id" = 1, "title" = 'My first post', "text" = 'Aenean eu leo quam. 
+Pellentesque ornare sem lacinia quam venenatis vestibulum. 
+Donec id elit non mi porta gravida at eget metus. 
+Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.', "created_date" = '2022-07-13 05:40:30', "published_date" = '2022-01-03 12:00:00' WHERE "blog_post"."id" = 2; args=(1, 'My first post', 'Aenean eu leo quam. \r\nPellentesque ornare sem lacinia quam venenatis vestibulum. \r\nDonec id elit non mi porta gravida at eget metus. \r\nFusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.', '2022-07-13 05:40:30', '2022-01-03 12:00:00', 2)
+(0.001) INSERT INTO "django_admin_log" ("action_time", "user_id", "content_type_id", "object_id", "object_repr", "action_flag", "change_message") VALUES ('2022-07-13 05:44:21.906336', 1, 7, '2', 'My first post', 2, '[{"changed": {"fields": ["Text"]}}]'); args=['2022-07-13 05:44:21.906336', 1, 7, '2', 'My first post', 2, '[{"changed": {"fields": ["Text"]}}]']
+"POST /admin/blog/post/2/change/ HTTP/1.1" 302 0
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-07-13 05:44:21.913838' AND "django_session"."session_key" = '4platpn3qb0w81ukp7flv3klsfvv3srf') LIMIT 21; args=('2022-07-13 05:44:21.913838', '4platpn3qb0w81ukp7flv3klsfvv3srf')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT COUNT(*) AS "__count" FROM "blog_post"; args=()
+(0.001) SELECT COUNT(*) AS "__count" FROM "blog_post"; args=()
+(0.000) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" ORDER BY "blog_post"."id" DESC; args=()
+"GET /admin/blog/post/ HTTP/1.1" 200 6663
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-07-13 05:44:21.966027' AND "django_session"."session_key" = '4platpn3qb0w81ukp7flv3klsfvv3srf') LIMIT 21; args=('2022-07-13 05:44:21.966027', '4platpn3qb0w81ukp7flv3klsfvv3srf')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-07-13 05:44:27.480082' AND "django_session"."session_key" = '4platpn3qb0w81ukp7flv3klsfvv3srf') LIMIT 21; args=('2022-07-13 05:44:27.480082', '4platpn3qb0w81ukp7flv3klsfvv3srf')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+(0.001) SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "auth_user" ON ("django_admin_log"."user_id" = "auth_user"."id") LEFT OUTER JOIN "django_content_type" ON ("django_admin_log"."content_type_id" = "django_content_type"."id") WHERE "django_admin_log"."user_id" = 1 ORDER BY "django_admin_log"."action_time" DESC LIMIT 10; args=(1,)
+"GET /admin/ HTTP/1.1" 200 5134
+(0.000) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."published_date" <= '2022-07-13 05:44:32.481504' ORDER BY "blog_post"."published_date" ASC; args=('2022-07-13 05:44:32.481504',)
+"GET / HTTP/1.1" 200 1280
+File /Users/tanishqv/DjangoProjects/djangogirls/blog/templates/blog/post_list.html previous mtime: 1657690994.884599, current mtime: 1657691104.4447064
+/Users/tanishqv/DjangoProjects/djangogirls/blog/templates/blog/post_list.html notified as changed. Signal results: [(<function template_changed at 0x103f53400>, True), (<function translation_file_changed at 0x104984310>, None)].
+(0.001) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."published_date" <= '2022-07-13 05:45:07.713548' ORDER BY "blog_post"."published_date" ASC; args=('2022-07-13 05:45:07.713548',)
+"GET / HTTP/1.1" 200 731
+(0.000) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."published_date" <= '2022-07-13 05:45:13.511489' ORDER BY "blog_post"."published_date" ASC; args=('2022-07-13 05:45:13.511489',)
+"GET / HTTP/1.1" 200 731
+File /Users/tanishqv/DjangoProjects/djangogirls/blog/templates/blog/post_list.html previous mtime: 1657691104.4447064, current mtime: 1657691128.0270047
+/Users/tanishqv/DjangoProjects/djangogirls/blog/templates/blog/post_list.html notified as changed. Signal results: [(<function template_changed at 0x103f53400>, True), (<function translation_file_changed at 0x104984310>, None)].
+(0.000) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."published_date" <= '2022-07-13 05:45:30.557610' ORDER BY "blog_post"."published_date" ASC; args=('2022-07-13 05:45:30.557610',)
+"GET / HTTP/1.1" 200 1268
+File /Users/tanishqv/DjangoProjects/djangogirls/blog/templates/blog/post_list.html previous mtime: 1657691128.0270047, current mtime: 1657691139.0384486
+/Users/tanishqv/DjangoProjects/djangogirls/blog/templates/blog/post_list.html notified as changed. Signal results: [(<function template_changed at 0x103f53400>, True), (<function translation_file_changed at 0x104984310>, None)].
+(0.000) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."published_date" <= '2022-07-13 05:45:41.462798' ORDER BY "blog_post"."published_date" ASC; args=('2022-07-13 05:45:41.462798',)
+"GET / HTTP/1.1" 200 1280
