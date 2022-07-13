@@ -9642,3 +9642,16 @@ File /Users/tanishqv/DjangoProjects/djangogirls/blog/templates/blog/post_list.ht
 /Users/tanishqv/DjangoProjects/djangogirls/blog/templates/blog/post_list.html notified as changed. Signal results: [(<function template_changed at 0x103f53400>, True), (<function translation_file_changed at 0x104984310>, None)].
 (0.000) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."published_date" <= '2022-07-13 05:45:41.462798' ORDER BY "blog_post"."published_date" ASC; args=('2022-07-13 05:45:41.462798',)
 "GET / HTTP/1.1" 200 1280
+File /Users/tanishqv/DjangoProjects/djangogirls/blog/templates/blog/post_list.html previous mtime: 1657691139.0384486, current mtime: 1657693261.3600605
+/Users/tanishqv/DjangoProjects/djangogirls/blog/templates/blog/post_list.html notified as changed. Signal results: [(<function template_changed at 0x103f53400>, True), (<function translation_file_changed at 0x104984310>, None)].
+(0.001) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."published_date" <= '2022-07-13 06:21:05.877840' ORDER BY "blog_post"."published_date" ASC; args=('2022-07-13 06:21:05.877840',)
+"GET / HTTP/1.1" 200 1499
+(0.000) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."published_date" <= '2022-07-13 06:21:16.623148' ORDER BY "blog_post"."published_date" ASC; args=('2022-07-13 06:21:16.623148',)
+"GET / HTTP/1.1" 200 1499
+(0.001) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."published_date" <= '2022-07-13 06:36:52.727246' ORDER BY "blog_post"."published_date" ASC; args=('2022-07-13 06:36:52.727246',)
+"GET / HTTP/1.1" 200 1499
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+(0.001) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."published_date" <= '2022-07-13 06:37:17.711858' ORDER BY "blog_post"."published_date" ASC; args=('2022-07-13 06:37:17.711858',)
+"GET / HTTP/1.1" 200 1499
