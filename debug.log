@@ -16741,3 +16741,46 @@ File /Users/tanishqv/DjangoProjects/djangogirls/blog/templates/blog/base.html pr
 "GET /post/2/ HTTP/1.1" 200 661
 (0.001) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."published_date" <= '2022-07-13 14:27:18.660820' ORDER BY "blog_post"."published_date" ASC; args=('2022-07-13 14:27:18.660820',)
 "GET / HTTP/1.1" 200 1228
+(0.001) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."published_date" <= '2022-07-13 14:38:23.013661' ORDER BY "blog_post"."published_date" ASC; args=('2022-07-13 14:38:23.013661',)
+"GET / HTTP/1.1" 200 1228
+File /Users/tanishqv/DjangoProjects/djangogirls/blog/templates/blog/base.html previous mtime: 1657722410.289658, current mtime: 1657723247.21424
+/Users/tanishqv/DjangoProjects/djangogirls/blog/templates/blog/base.html notified as changed. Signal results: [(<function template_changed at 0x106747400>, True), (<function translation_file_changed at 0x106f8c310>, None)].
+(0.001) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."published_date" <= '2022-07-14 07:41:39.976494' ORDER BY "blog_post"."published_date" ASC; args=('2022-07-14 07:41:39.976494',)
+"GET / HTTP/1.1" 200 1226
+File /Users/tanishqv/DjangoProjects/djangogirls/blog/templates/blog/base.html previous mtime: 1657723247.21424, current mtime: 1657785094.683976
+/Users/tanishqv/DjangoProjects/djangogirls/blog/templates/blog/base.html notified as changed. Signal results: [(<function template_changed at 0x106747400>, True), (<function translation_file_changed at 0x106f8c310>, None)].
+File /Users/tanishqv/DjangoProjects/djangogirls/blog/templates/blog/post_list.html previous mtime: 1657721251.0566742, current mtime: 1657785104.634531
+/Users/tanishqv/DjangoProjects/djangogirls/blog/templates/blog/post_list.html notified as changed. Signal results: [(<function template_changed at 0x106747400>, True), (<function translation_file_changed at 0x106f8c310>, None)].
+(0.002) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."published_date" <= '2022-07-14 07:51:55.132364' ORDER BY "blog_post"."published_date" ASC; args=('2022-07-14 07:51:55.132364',)
+"GET / HTTP/1.1" 200 1884
+"GET /static/css/blog.css HTTP/1.1" 200 1034
+File /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/django/contrib/staticfiles/storage.py first seen with mtime 1657545274.7519066
+(0.001) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."id" = 2 LIMIT 21; args=(2,)
+"GET /post/2/ HTTP/1.1" 200 1182
+"GET /static/css/blog.css HTTP/1.1" 304 0
+(0.000) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."published_date" <= '2022-07-14 07:52:11.333377' ORDER BY "blog_post"."published_date" ASC; args=('2022-07-14 07:52:11.333377',)
+"GET / HTTP/1.1" 200 1884
+"GET /static/css/blog.css HTTP/1.1" 304 0
+(0.000) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."id" = 3 LIMIT 21; args=(3,)
+"GET /post/3/ HTTP/1.1" 200 1150
+(0.001) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."published_date" <= '2022-07-14 07:52:13.815267' ORDER BY "blog_post"."published_date" ASC; args=('2022-07-14 07:52:13.815267',)
+"GET / HTTP/1.1" 200 1884
+(0.000) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."id" = 1 LIMIT 21; args=(1,)
+"GET /post/1/ HTTP/1.1" 200 937
+"GET /static/css/blog.css HTTP/1.1" 304 0
+(0.000) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."published_date" <= '2022-07-14 07:52:16.366236' ORDER BY "blog_post"."published_date" ASC; args=('2022-07-14 07:52:16.366236',)
+"GET / HTTP/1.1" 200 1884
+(0.000) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."id" = 3 LIMIT 21; args=(3,)
+"GET /post/3/ HTTP/1.1" 200 1150
+"GET /static/css/blog.css HTTP/1.1" 304 0
+(0.000) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."published_date" <= '2022-07-14 07:52:21.515521' ORDER BY "blog_post"."published_date" ASC; args=('2022-07-14 07:52:21.515521',)
+"GET / HTTP/1.1" 200 1884
+(0.001) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."id" = 2 LIMIT 21; args=(2,)
+"GET /post/2/ HTTP/1.1" 200 1182
+"GET /static/css/blog.css HTTP/1.1" 304 0
+(0.001) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."published_date" <= '2022-07-14 07:52:41.779275' ORDER BY "blog_post"."published_date" ASC; args=('2022-07-14 07:52:41.779275',)
+"GET / HTTP/1.1" 200 1884
+(0.001) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."id" = 3 LIMIT 21; args=(3,)
+"GET /post/3/ HTTP/1.1" 200 1150
+(0.000) SELECT "blog_post"."id", "blog_post"."author_id", "blog_post"."title", "blog_post"."text", "blog_post"."created_date", "blog_post"."published_date" FROM "blog_post" WHERE "blog_post"."published_date" <= '2022-07-14 07:52:44.267792' ORDER BY "blog_post"."published_date" ASC; args=('2022-07-14 07:52:44.267792',)
+"GET / HTTP/1.1" 200 1884
